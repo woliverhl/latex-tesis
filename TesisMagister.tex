@@ -1,0 +1,88 @@
+%\documentclass[10pt]{book}%
+\documentclass[letterpaper,openright,10pt]{article}
+
+%PACKAGE%
+\usepackage{blindtext}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{helvet}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{multirow}
+\usepackage{apacite}
+\usepackage{booktabs}
+\usepackage[utf8]{inputenc} 
+\usepackage{anysize}
+\usepackage{varioref}
+\usepackage{enumerate}
+\usepackage{graphicx} % Required for including images
+ \usepackage{amsmath}
+
+
+%CONFIGURACIONES%
+\renewcommand{\familydefault}{\sfdefault} 
+\setcounter{secnumdepth}{3} %para que ponga 1.1.1.1 en subsubsecciones
+\setcounter{tocdepth}{3} % para que ponga subsubsecciones en el indice
+\renewcommand{\baselinestretch}{1,5} %Interlineado
+% Clear the header and footer
+\fancyhead{}
+\fancyfoot{}
+% we use \prefix@<level> only if it is defined
+\makeatletter
+% we use \prefix@<level> only if it is defined
+\renewcommand{\@seccntformat}[1]{%
+  \ifcsname prefix@#1\endcsname
+    \csname prefix@#1\endcsname
+  \else
+    \csname the#1\endcsname\quad
+  \fi}
+% define \prefix@section
+\newcommand\prefix@section{CAPITULO \thesection. }
+\makeatother
+\graphicspath{{Figures/}} % Set the default folder for images
+
+%MARGENES
+\marginsize{4cm}{2.5cm}{2.5cm}{2.5cm}
+
+%DOCUMENTO%
+\begin{document}
+\renewcommand{\figurename}{Fig.} %Cambia la palabra "Figura" por "Fig."
+\renewcommand{\tablename}{Tabla} %Cambia la palabra "Cuadro" por "Tabla"
+\renewcommand\thefigure{\arabic{section}.\arabic{figure}} % Genera numeración X.Y
+\renewcommand\thetable{\arabic{section}.\arabic{table}} % Genera numeración X.Y
+\numberwithin{figure}{section} %Hace que la primera figura de cada sección X sea X.1
+\numberwithin{table}{section} %Hace que la primera tabla de cada sección X sea X.1
+\bibliographystyle{apacite}
+\pagenumbering{Roman} 
+
+\renewcommand{\listfigurename}{ÍNDICE DE ILUSTRACIONES}
+\renewcommand{\listtablename}{ÍNDICE DE TABLAS}
+\renewcommand{\contentsname}{TABLA DE CONTENIDOS}
+
+
+\tableofcontents % indice de contenidos
+
+\cleardoublepage
+\addcontentsline{toc}{section}{\listfigurename} % para que aparezca en el indice de contenidos
+\listoffigures % indice de figuras
+
+\cleardoublepage
+\addcontentsline{toc}{section}{\listtablename} % para que aparezca en el indice de contenidos
+\listoftables % indice de tablas 
+
+\include{introduccion}
+
+\include{marcoteorico}
+
+\include{modeloliviano}
+
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+\bibliography{TesisMagister}
+\nocite{*}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
