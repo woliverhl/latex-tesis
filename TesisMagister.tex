@@ -1,5 +1,5 @@
 %\documentclass[10pt]{book}%
-\documentclass[letterpaper,openright,10pt]{article}
+\documentclass[letterpaper,openright,11pt]{article}
 
 %PACKAGE%
 \usepackage{blindtext}
@@ -17,6 +17,9 @@
 \usepackage{enumerate}
 \usepackage{graphicx} % Required for including images
 \usepackage{amsmath}
+\usepackage{wrapfig}
+\usepackage{appendix}
+\usepackage{pdfpages}
 
 %CONFIGURACIONES%
 \renewcommand{\familydefault}{\sfdefault} 
@@ -58,6 +61,12 @@
    \fancyfoot[R]{\thepage}%
 }
 
+%ANEXO
+\renewcommand{\appendixname}{ANEXO}
+\renewcommand{\appendixtocname}{ANEXO}
+\renewcommand{\appendixpagename}{ANEXO}
+%\renewcommand{\sectiontitle}\prefix@section{CAPITULO \thesection. }
+
 %DOCUMENTO%
 \begin{document}
 \renewcommand{\figurename}{Fig.} %Cambia la palabra "Figura" por "Fig."
@@ -68,10 +77,11 @@
 \numberwithin{table}{section} %Hace que la primera tabla de cada sección X sea X.1
 \bibliographystyle{apacite}
 
-\renewcommand{\listtablename}{ÍNDICE DE TABLAS}
-\renewcommand{\listfigurename}{ÍNDICE DE ILUSTRACIONES}
-\renewcommand{\contentsname}{TABLA DE CONTENIDOS}
-\renewcommand{\refname}{REFERENCIAS BIBLIOGRÁFICAS}
+\renewcommand{\listtablename}{ÍNDICE DE TABLA}
+\renewcommand{\listfigurename}{ÍNDICE DE ILUSTRACION}
+\renewcommand{\contentsname}{TABLA DE CONTENIDO}
+\renewcommand{\refname}{REFERENCIA BIBLIOGRÁFICA}
+
 
 \include{portada}
 \include{copyright}
@@ -82,11 +92,9 @@
 \tableofcontents % indice de contenidos
 
 \cleardoublepage
-\addcontentsline{toc}{section}{\listtablename} % para que aparezca en el indice de contenidos
 \listoftables % indice de tablas 
 
 \cleardoublepage
-\addcontentsline{toc}{section}{\listfigurename} % para que aparezca en el indice de contenidos
 \listoffigures % indice de figuras
 
 
@@ -103,6 +111,12 @@
 %----------------------------------------------------------------------------------------
 \bibliography{TesisMagister}
 \nocite{*}
+
+%ANEXOS
+\include{anexoA}
+\include{anexoB}
+\include{anexoC}
+\include{anexoD}
 
 %----------------------------------------------------------------------------------------
 

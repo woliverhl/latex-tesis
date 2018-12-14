@@ -1,10 +1,10 @@
 \section{INTRODUCCIÓN}
 \pagenumbering{arabic}
 
-Este capítulo presenta una introducción y panorama general de la tesis de magíster, la cual propone un nuevo tipo de actas de reuniones basada en una teoría del diálogo llamada diálogo/acción. Primero, se da una descripción del problema propuesto y después la respuesta o solución a esa problemática. A continuación, se muestran los alcances del modelo de desarrollo para lograr una solución de software. Finalmente, se describe brevemente el contenido de los siguientes capítulos.
+Este capítulo presenta una introducción y panorama general de la tesis de magíster, la cual propone un nuevo tipo de actas de reuniones basada en una teoría del diálogo llamada diálogo/acción. Primero, se da una descripción del problema propuesto y después la respuesta o solución a esa problemática. A continuación, se muestran los alcances del modelo de desarrollo para lograr una solución de \textit{software}. Finalmente, se describe brevemente el contenido de los siguientes capítulos.
 
 
-\subsection{ANTECEDENTES Y MOTIVACIÓN}
+\subsection{ANTECEDENTE Y MOTIVACIÓN}
 El área del CSCW\footnote{Para ver la definición de \textit{Computer Supported Cooperative Work} en este enlace \url{https://en.wikipedia.org/wiki/Computer-supported_cooperative_work}} es un campo multidisciplinario de investigación sobre el fenómeno de la colaboración y su relación con la tecnología informática. En ese campo se han desarrollado tecnologías como: sistema de videoconferencia, pizarras compartidas, sistema de intercambio, flujos de trabajo (en Inglés, \textit{workflow}); todas con enfoque de apoyo colaborativo al trabajo en grupo \fullcite{RN32}. A su vez, se ha han desarrollado marcos teóricos sobre actividades de trabajo en equipo como la presentada en \fullcite{RN24} que propone un enfoque llamado diálogo/acción\footnote{El diálogo/acción es una extensión del enfoque de lenguaje/acción propuesto originalmente por Terry Winograd y Fernando Flores (1986) y presentado en su libro “Understanding Computers and Cognition”. La diferencia principal entre ambos enfoques es que en lenguaje/acción centra exclusivamente en la parte estable de las conversaciones, es decir en los compromisos y los acuerdos. En cambio, en el enfoque diálogo/acción incorpora la parte divergente de la comunicación constituida por las dudas y los desacuerdos.} con sus artefactos tecnológicos asociados pero cuya efectividad no se demuestra aún.
 
 Las teorías y modelos más recientes permiten comprender mejor los procesos de cooperación \fullcite{RN27}, con el objeto de dar efectividad a las reuniones de trabajo. Sin embargo, ello debe complementarse con nuevas herramientas CSCW (llamadas \textit{groupware}) más específicamente del área \textit{meetingware} - para situar a las personas (mismo tiempo) en cualquier hilo conversacional (mismo lugar) de cualquier proyecto colectivo. Esto se infiere de acuerdo a la taxonomía de clasificación no excluyente \fullcite{RN2}, debido a que el proyecto podría emplearse para funciones diferentes a las que fue creado, esto de acuerdo a lo presentado en la Tabla \ref{tab:taxonomia}.
@@ -27,7 +27,13 @@ Herramienta & \multicolumn{2}{l}{D-Minute} \\ \midrule
 \end{tabular}
 \end{table}
 
-Sin duda herramientas como IBIS utilizada para mapear diálogos en reuniones \fullcite{RN19}, PRIME creada para el apoyo de reuniones de decisión y a su parte divergente de la discusión \fullcite{RN21}, COHERE una plataforma hipermedia para investigación que permite explorar las nuevas ideas \fullcite{RN16}, por nombrar solo algunos de los más importantes; buscan que las personas en un entorno \textit{co-located} síncrono desarrollen la capacidad de pensar juntos, colaborativamente y de forma coordinada \fullcite{RN27}; debido a que cada vez se reconoce la importancia de hacer eficiente el intercambio de información y las decisiones tomadas en reuniones de trabajo \fullcite{RN37}. Sin embargo, si lo anterior es llevado a un marco de reuniones de planificación en la elaboración de proyectos de metodología tradicional no siempre puede resultar la más adecuada. Esto debido a que en ocasiones la discusión a menudo se aleja de la agenda por la falta de percepción compartida de los aspectos del proyecto \fullcite{RN12}, y que en las organizaciones modernas los participantes normalmente provienen de diversos orígenes y/o profesiones \fullcite{RN19}. Los artefactos tecnológicos no permiten a los participantes referirse adecuadamente a los significados que aparecieron en reuniones pasadas \fullcite{RN24} para hacer gestión del avance de los proyectos que impliquen reuniones. Además, la falta de una tecnología que tome en consideración el tema social no permite un encuentro de múltiples interesados que se muevan desde el debate a la co-creación \fullcite{scharmer2010teoria}. Muchas técnicas y herramientas no están basadas en teoría alguna, lo que dificulta contar con los marcos interpretativos para probar la efectividad de las propuestas tecnológicas. Por ejemplo, cómo saber si una herramienta apoya más que otra para retomar el hilo de las reuniones pasadas en el momento que ésta se necesite.
+Herramientas como IBIS utilizada para mapear diálogos en reuniones \fullcite{RN19}, PRIME creada para el apoyo de reuniones de decisión y a su parte divergente de la discusión \fullcite{RN21}, COHERE una plataforma hipermedia para investigación que permite explorar las nuevas ideas \fullcite{RN16}, por nombrar solo algunos de los más relevantes. Buscan que las personas, en un entorno \textit{co-located} síncrono desarrollen la capacidad de pensar juntos, colaborativamente y de forma coordinada \fullcite{RN27}.  Lo anterior, debido a que cada vez se reconoce la importancia de hacer eficiente el intercambio de información y las decisiones tomadas en reuniones de trabajo \fullcite{RN37}.
+
+
+Sin embargo, si lo anterior es llevado a un marco de reuniones de planificación en la elaboración de proyectos de metodología tradicional no siempre puede resultar la más adecuada. Esto debido a que en ocasiones la discusión a menudo se aleja de la agenda por la falta de percepción compartida de los aspectos del proyecto \fullcite{RN12}, y que en las organizaciones modernas los participantes normalmente provienen de diversos orígenes y/o profesiones \fullcite{RN19}. 
+
+
+Los artefactos tecnológicos no permiten a los participantes referirse adecuadamente a los significados que aparecieron en reuniones pasadas \fullcite{RN24} para hacer gestión del avance de los proyectos que impliquen reuniones. Además, la falta de una tecnología que tome en consideración el tema social no permite un encuentro de múltiples interesados que se muevan desde el debate a la co-creación \fullcite{scharmer2010teoria}. Muchas técnicas y herramientas no están basadas en teoría alguna, lo que dificulta contar con los marcos interpretativos para probar la efectividad de las propuestas tecnológicas. Por ejemplo, cómo saber si una herramienta apoya más que otra para retomar el hilo de las reuniones pasadas en el momento que ésta se necesite.
 
 
 La teoría del diálogo/acción plantea, más allá de la verborrea de una conversación en una reunión, la presencia de una síntesis de elementos que son los fundamentales dentro de un diálogo humano. Dichos elementos son los “acuerdos”, los “desacuerdos”, las “dudas”, y los “compromisos” que son llamados la síntesis dialógica o simplemente los elementos del diálogo \fullcite{RN24}. A estos elementos se suman las “acciones” o “tareas” (puesto como “ta”). Aquí, el modelo generativo de reuniones hace que cada elemento del diálogo (resumidos con los símbolos “ac”, “du”, “co”, “de” y “ta”) puede dar origen a otro dando lugar al intercambio de ideas, trazabilidad de los elementos, preocupaciones y focos de acción entre los diversos participantes del equipo. En ese contexto, se plantea la idea de crear un artefacto tecnológico llamado acta dialógica, que ayude a la circulación del conocimiento \fullcite{RN26}, que haga que a partir de la práctica - tácita encarnada - de las personas en el proyecto esta se transforme en conocimiento explícito. Esa transformación, según estos autores, es la base desde donde se contribuye al aprendizaje del equipo y explora el dominio del pensamiento de manera colectiva \fullcite{RN22}. Con esa información es posible hacer gestión sobre el rumbo de las reuniones tendientes a conseguir las metas del proyecto.
@@ -42,41 +48,41 @@ Las dificultades antes se\~naladas, convergen en una crisis en la percepción de
 
 \subsection{DESCRIPCIÓN DEL PROBLEMA}
 
-Considerando lo presentado anteriormente, se detecta el siguiente problema: ¿Cómo mejorar la continuidad, productividad y efectividad de las reuniones de proyectos de software, donde hay períodos en que los actores se ven enfrentados a interrupciones que afectan la circulación del conocimiento junto con el flujo y el seguimiento de la acción?
+Considerando lo presentado anteriormente, se detecta el siguiente problema: ¿Cómo mejorar la continuidad, productividad y efectividad de las reuniones de proyectos de \textit{software}, donde hay períodos en que los actores se ven enfrentados a interrupciones que afectan la circulación del conocimiento junto con el flujo y el seguimiento de la acción?
 
-\subsection{OBJETIVOS Y ALCANCES DEL PROYECTO}
+\subsection{OBJETIVO Y ALCANCE DEL PROYECTO}
 
 \subsubsection{Objetivo general}
 
 Desarrollar un tipo actas de reuniones que facilite la recuperación, el estado de reuniones pasadas y el flujo del conocimiento basada en el enfoque diálogo/acción
 
-\subsubsection{Objetivo específicos}
+\subsubsection{Objetivo específico}
 
 \begin{enumerate}[1.]
     \item Hacer una revisión de la literatura de los \textit{meetingware} con sus características para relacionarlo con D-Minute.
     \item Comparar D-Minute con otros \textit{meetingware} en términos comerciales.
     \item Dise\~nar una propuesta de valor de D-Minute cómo \textit{meetingware} tendiente a convertirse en una potencial innovación en el mercado.
-	\item Desarrollar el artefacto de software D-Minute con el principio de las actas dialógicas que permita administrar reuniones con los elementos del diálogo y las tareas asociadas.
+	\item Desarrollar el artefacto de \textit{software} D-Minute con el principio de las actas dialógicas que permita administrar reuniones con los elementos del diálogo y las tareas asociadas.
 	\item Dise\~nar una validación de D-Minute por medio de una investigación científica para mostrar las ventajas en tiempos y en circulación del conocimiento.
 \end{enumerate}
 
-\subsubsection{Alcances}
+\subsubsection{Alcance}
 
-La solución que se propone, está circunscrito en un dominio de proyectos muy particulares: como son los proyectos de software tradicional; el desarrollo de un producto tecnológico denominado Acta Dialógica o D-Minute que contemple los elementos del diálogo (“ac”, “du”, “co” y “de”) y un quinto elemento “ta” de tarea (acciones a realizar que se priorizan por medio de un tablero Kanban). Además, por el lado de la investigación se aplicará un diseño comparativo basado en una lista de criterios de los productos tecnológicos más relevantes del mercado, con el objeto de situar a D-Minute como una herramienta a escoger para el apoyo de reuniones de trabajo en proyectos de software.
+La solución que se propone, está circunscrito en un dominio de proyectos muy particulares: como son los proyectos de \textit{software} tradicional; el desarrollo de un producto tecnológico denominado Acta Dialógica o D-Minute que contemple los elementos del diálogo (“ac”, “du”, “co” y “de”) y un quinto elemento “ta” de tarea (acciones a realizar que se priorizan por medio de un tablero Kanban). Además, por el lado de la investigación se aplicará un diseño comparativo basado en una lista de criterios de los productos tecnológicos más relevantes del mercado, con el objeto de situar a D-Minute como una herramienta a escoger para el apoyo de reuniones de trabajo en proyectos de \textit{software}.
 
 \subsection{SOLUCIÓN PROPUESTA}
 
 Con la información recabada con una reunión dialógica es posible hacer gestión de un proyecto en términos conversacionales. De hecho, se puede conducir el rumbo de las reuniones presenciales tendientes a conseguir las metas del proyecto dentro del enfoque diálogo\/acción.
 
-\subsubsection{Características de la solución de software}
+\subsubsection{Característica de la solución de \textit{software}}
 
-La solución de software en esta tesis se llama D-Minute la cual permite crear reuniones dialógicas y capturar los hilos comunicaciones y de acción asociados al diálogo en reuniones pasadas. Esto facilita que los participantes - reunidos cara a cara - (o sincrónico co-located) tengan los antecedentes precisos, necesarios y en el momento requerido para tener foco y así, tomar acciones efectivas en el proyecto para una fluida circulación de conocimiento. En consecuencia, la aplicación debe ser presentada en un setting co-locado donde el líder de la reunión muestra las minutas de las reuniones - con un datashow o una pantalla gigante - y las recorre con los miembros del equipo estableciendo temas de conversación. En esta propuesta la acción se refleja en un tablero Kanban de reuniones con las tareas que surgen de la conversación en cuestión.
+La solución de \textit{software} en esta tesis se llama D-Minute la cual permite crear reuniones dialógicas y capturar los hilos comunicaciones y de acción asociados al diálogo en reuniones pasadas. Esto facilita que los participantes - reunidos cara a cara - (o sincrónico co-located) tengan los antecedentes precisos, necesarios y en el momento requerido para tener foco y así, tomar acciones efectivas en el proyecto para una fluida circulación de conocimiento. En consecuencia, la aplicación debe ser presentada en un setting co-locado donde el líder de la reunión muestra las minutas de las reuniones - con un datashow o una pantalla gigante - y las recorre con los miembros del equipo estableciendo temas de conversación. En esta propuesta la acción se refleja en un tablero Kanban de reuniones con las tareas que surgen de la conversación en cuestión.
 
-\subsubsection{Propósito de la solución de software}
+\subsubsection{Propósito de la solución de \textit{software}}
 
 El propósito consiste en permitir mejorar la continuidad; productividad y efectividad de las reuniones. Se pretende con D-Minute crear conocimiento que dé lugar a innovaciones \fullcite{RN31}, por medio de los elementos bases para una continuidad dialógica. Dicho de paso, que D-Minute contenga una validación mediante una propuesta de valor diferenciado de las herramientas existentes en el mercado. Para así, contribuir a la efectividad de los proyectos que a diario las personas realizan tanto en el mundo del trabajo como también en los ámbitos de aprendizaje. Finalmente, con este trabajo, se busca incidir positivamente al pensamiento colaborativo y la gestión del conocimiento de equipos autogestionados.
 
-\subsection{METODOLOGÍAS Y HERRAMIENTAS UTILIZADAS}
+\subsection{METODOLOGÍA Y HERRAMIENTA UTILIZADA}
 
 La tesis implica investigación, desarrollo e innovación (I+D+i). Todas estas líneas están interconectadas por el medio del desarrollado “D” que debe ser evaluado usando “I” en orden a convertirse en una innovación “i” con bases sólidas. Las tres líneas poseen metodología diferentes, pero que se complementan entre ellas, las que se detallan a continuación:
 
@@ -91,13 +97,13 @@ La segunda pregunta va en la línea de saber - como sucede en los estudio de usu
 
 \textbf{PREGUNTA 2:} ¿Cómo saber si la percepción de la circulación del conocimiento de los actores del \textsl{meetingware} propuesto, D-Minute, supera a las de las actas tradicionales manejadas con ofimatica?
         
-	\item En la parte “D” (de desarrollo) la metodología a utilizar fue una variación de Scrum\footnote{\url{https://es.wikipedia.org/wiki/Scrum}} que permite asumir el desarrollo por una sola persona pero aplicando solo algunas de las características y artefactos ágiles del desarrollo de software. Para ello, es preciso solicitar a compañeros de tesis que hagan la tarea de testers para verificar la aplicación D-Minute en términos funcionales y no funcionales.
+	\item En la parte “D” (de desarrollo) la metodología a utilizar fue una variación de Scrum\footnote{\url{https://es.wikipedia.org/wiki/Scrum}} que permite asumir el desarrollo por una sola persona pero aplicando solo algunas de las características y artefactos ágiles del desarrollo de \textit{software}. Para ello, es preciso solicitar a compañeros de tesis que hagan la tarea de testers para verificar la aplicación D-Minute en términos funcionales y no funcionales.
 
 	\item En la parte “i” (de innovación) de la tesis busca un modelo de negocio liviano aplicando \textsl{Design Thinking}, que es un enfoque de trabajo en \textsl{startup} ampliamente usada en el mundo de la Innovación. En particular y en concreto se utiliza el modelo de \textsl{Lean Startup} con la finalidad de además de contar con un modelo de negocios se posible concebir un producto mínimo viable (siglas en inglés: MVP) que permita la prueba de concepto de la solución. Por un lado, se aplica una encuesta a gerentes de empresas para validar si las características que va a tener D-Minute son deseables para tener reuniones ágiles y efectivas. Por otro lado, se efectúa una investigación de mercado donde herramientas \textit{meetingware} competidoras a D-Minute no alcanzan sus ventajas competitivas. Es importante destacar que si la innovación no aplica hipótesis de mercado que puedan validarse no se puede afirmar fehacientemente que D-Minute sea una potencial innovación con perspectivas de éxito.
 		
 \end{enumerate}
 
-\subsubsection{Herramientas de desarrollo}
+\subsubsection{Herramienta de desarrollo}
 
 La implementación del instrumento “Acta Dialógica D-Minute” fue desarrollada bajo las siguientes herramientas de apoyo:
 
@@ -120,7 +126,7 @@ La implementación del instrumento “Acta Dialógica D-Minute” fue desarrolla
 		\item Servidor NG en su versión Express
 		\item Docker GA en su versión gratutita para Ubuntu
     \end{enumerate}    
-    \item TAIGA\footnote{TAIGA es una plataforma de código abierto para manejar proyectos ágiles. Más detalles de su funcionamiento se encuentra visitando \url{https://taiga.io/}} como software de desarrollo ágil para el seguimiento de los sprint y las épicas del proyecto de software.
+    \item TAIGA\footnote{TAIGA es una plataforma de código abierto para manejar proyectos ágiles. Más detalles de su funcionamiento se encuentra visitando \url{https://taiga.io/}} como \textit{software} de desarrollo ágil para el seguimiento de los sprint y las épicas del proyecto de \textit{software}.
 \end{enumerate}
 
 Ahora, para llevar a cabo el estudio comparativo de mercado se requiere identificar las herramientas actuales para el manejo de reuniones, listar sus funciones, analizar su funcionalidad y generar una lista de criterios medibles a contrastar. Todos temas tratados en el capítulo 3, en sección de \textit{meetingware} comerciales o herramientas similares.
@@ -135,7 +141,7 @@ El presente documento de tesis se estructura de la siguiente forma: en el CAPÍT
 
 Luego, en el CAPÍTULO 3 se presenta el bosquejo de la innovación, se analiza los elementos que debe contener un acta dialógica electrónica en base a los conceptos claves presentados en el capítulo dos. Además, se listan los criterios de evaluación para que D-Minute sea una producto admisible para el mercado.
 
-Posterior a esto, en el CAPÍTULO 4 se abordan todos los aspectos propios de la herramienta de software desarrollada como vía de apoyo para la ejecución del estudio. En esta se describe la arquitectura y los componentes asociados, los flujos de navegación, prototipos y las tareas que abordan, diseño de la información capturada, entre otros.
+Posterior a esto, en el CAPÍTULO 4 se abordan todos los aspectos propios de la herramienta de \textit{software} desarrollada como vía de apoyo para la ejecución del estudio. En esta se describe la arquitectura y los componentes asociados, los flujos de navegación, prototipos y las tareas que abordan, diseño de la información capturada, entre otros.
 
 En el CAPÍTULO 5 se presenta el diseño del experimento a emplear tanto para desarrollar el experimento como para probar la hipótesis sobre la herramienta. 
 
